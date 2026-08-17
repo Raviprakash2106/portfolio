@@ -1,198 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Prakash | Software Engineer</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ravi Prakash - Software Engineer portfolio showcasing web development and AI/ML projects.">
+<title>Ravi Prakash | Software Engineer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-
-    <nav>
-
-        <div class="logo">Ravi.</div>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
+<header class="header">
+<nav class="nav container">
+<a href="#home" class="logo">Ravi<span>.</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
-
-<section id="home" class="hero">
-
-    <div class="hero-text">
-
-        <h3>Hello, I'm</h3>
-
-        <h1>Ravi Prakash</h1>
-
-        <h2><span id="typing"></span></h2>
-
-        <p>
-
-            Passionate Software Engineer focused on creating beautiful,
-            responsive and user-friendly web applications.
-
-        </p>
-
-        <a href="#projects" class="btn">Explore My Work</a>
-
-    </div>
-
-    <div class="hero-image">
-
-        <div class="circle">
-
-            <img src="images/profile.jpg" alt="Ravi">
-
-        </div>
-
-    </div>
-
+<main>
+<section id="home" class="hero container">
+<div class="hero-content reveal">
+<p class="eyebrow">Hello, I'm</p>
+<h1>Ravi Prakash</h1>
+<h2><span id="typing"></span><span class="cursor">|</span></h2>
+<p class="hero-description">Computer Science graduate focused on building responsive web applications and practical AI/ML solutions with clean, user-friendly experiences.</p>
+<div class="hero-actions"><a href="#projects" class="btn primary">View My Projects</a><a href="#contact" class="btn secondary">Contact Me</a></div>
+</div>
+<div class="hero-visual reveal">
+<div class="profile-orbit"><div class="profile-card"><span>RP</span></div><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span></div>
+</div>
 </section>
 
-<section id="about">
-
-    <h2>About Me</h2>
-
-    <div class="card">
-
-        <p>
-
-            I'm Ravi Prakash, a Computer Science graduate passionate about
-            Frontend Development, JavaScript, React, Python and Artificial
-            Intelligence. I enjoy solving problems and building clean,
-            modern websites with great user experiences.
-
-        </p>
-
-    </div>
-
+<section id="about" class="section container">
+<div class="section-heading reveal"><p class="section-label">ABOUT ME</p><h2>Building with code and curiosity.</h2></div>
+<div class="about-card reveal">
+<p>I'm Ravi Prakash, a Computer Science graduate passionate about software development, frontend technologies, Python, Java and Artificial Intelligence. I enjoy turning ideas into useful applications and continuously improving my development and problem-solving skills.</p>
+<div class="about-highlights"><div><strong>Web</strong><span>Frontend & responsive UI</span></div><div><strong>AI/ML</strong><span>Deep learning & practical models</span></div><div><strong>Problem Solving</strong><span>Python, Java & SQL</span></div></div>
+</div>
 </section>
 
-<section id="skills">
-
-    <h2>Skills</h2>
-
-    <div class="grid">
-
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>React</div>
-        <div>Python</div>
-        <div>Java</div>
-        <div>SQL</div>
-        <div>Git</div>
-        <div>GitHub</div>
-
-    </div>
-
+<section id="skills" class="section container">
+<div class="section-heading reveal"><p class="section-label">SKILLS</p><h2>Technologies I work with.</h2></div>
+<div class="skills-grid reveal"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Python</span><span>Java</span><span>SQL</span><span>Git</span><span>GitHub</span><span>Machine Learning</span><span>Deep Learning</span><span>TensorFlow</span></div>
 </section>
 
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-        <div class="project">
-
-            <h3>MindTrace</h3>
-
-            <p>
-                AI-powered offline journal with sentiment analysis.
-            </p>
-
-        </div>
-
-        <div class="project">
-
-            <h3>Breast Cancer Diagnosis</h3>
-
-            <p>
-                Deep learning model using ultrasound images.
-            </p>
-
-        </div>
-
-        <div class="project">
-
-            <h3>Personal Finance Tracker</h3>
-
-            <p>
-                Expense management web application.
-            </p>
-
-        </div>
-
-    </div>
-
+<section id="projects" class="section container">
+<div class="section-heading reveal"><p class="section-label">PROJECTS</p><h2>Things I've built.</h2></div>
+<div class="projects-grid">
+<article class="project-card reveal"><div class="project-number">01</div><h3>Personal Finance Tracker</h3><p>A responsive finance tracker for recording income and expenses, with category breakdowns and monthly financial trends.</p><div class="tags"><span>React</span><span>JavaScript</span><span>Tailwind</span></div><div class="project-links"><a href="https://my-finance-tracker-umber.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a><a href="https://github.com/Raviprakash2106/my-finance-tracker" target="_blank" rel="noopener">GitHub ↗</a></div></article>
+<article class="project-card reveal"><div class="project-number">02</div><h3>Breast Cancer Diagnosis</h3><p>Ultrasound image classification project using ensemble transfer learning with EfficientNetB3, InceptionV3 and ResNet152V2.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>Deep Learning</span></div><div class="project-links"><a href="https://github.com/Raviprakash2106/ml_projects-" target="_blank" rel="noopener">GitHub ↗</a></div></article>
+<article class="project-card reveal"><div class="project-number">03</div><h3>MindTrace</h3><p>An AI-focused offline journal concept designed to analyze journal entries and provide sentiment-based insights.</p><div class="tags"><span>Python</span><span>AI</span><span>Sentiment Analysis</span></div></article>
+</div>
 </section>
 
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <div class="contact">
-
-        <p>Email</p>
-
-        <a href="mailto:raviprakash210604@gmail.com">
-
-            raviprakash210604@gmail.com
-
-        </a>
-
-        <br><br>
-
-        <p>GitHub</p>
-
-        <a href="https://github.com/Raviprakash2106" target="_blank">
-
-            github.com/Raviprakash2106
-
-        </a>
-
-        <br><br>
-
-        <p>LinkedIn</p>
-
-        <a href="https://linkedin.com/in/ravi-prakash-uppanamoni" target="_blank">
-
-            linkedin.com/in/ravi-prakash-uppanamoni
-
-        </a>
-
-    </div>
-
+<section id="contact" class="section container">
+<div class="contact-card reveal"><p class="section-label">CONTACT</p><h2>Let's connect.</h2><p>I'm open to software development and AI/ML opportunities.</p><div class="contact-links"><a href="mailto:raviprakash210604@gmail.com">Email</a><a href="https://github.com/Raviprakash2106" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/ravi-prakash-uppanamoni" target="_blank" rel="noopener">LinkedIn</a></div></div>
 </section>
-
-<footer>
-
-    © 2026 Ravi Prakash
-
-</footer>
-
+</main>
+<footer><p>© 2026 Ravi Prakash. Built with HTML, CSS & JavaScript.</p></footer>
 <script src="script.js"></script>
-
 </body>
 </html>
