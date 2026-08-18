@@ -1,4 +1,4 @@
-const words=["Software Engineer","Frontend Developer","Java Developer","AI/ML Enthusiast"];
+const words=["Software Engineer","Web Developer","AI/ML Enthusiast"];
 let wordIndex=0,charIndex=0,deleting=false;
 const typing=document.getElementById("typing");
 function type(){
